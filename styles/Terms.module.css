@@ -1,0 +1,13 @@
+.typography {
+}
+.textShadow {
+  /* Drop */
+  text-shadow: 0px 40px 80px rgba(43, 121, 211, 0.2);
+
+  font-weight: 900;
+  line-height: normal;
+  background: linear-gradient(180deg, #479dff 0%, #0a4efe 100%);
+  background-clip: text;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}

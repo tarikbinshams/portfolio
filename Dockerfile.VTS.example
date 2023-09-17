@@ -1,0 +1,25 @@
+FROM node:16.16.0-alpine as build
+
+RUN mkdir -p /var/www/frontend
+
+# Set working directory
+WORKDIR /var/www/frontend
+
+#RUN apt-get clean
+
+COPY . /var/www/frontend
+
+
+RUN rm -Rf node_modules
+
+RUN yarn
+
+RUN yarn build
+
+FROM node:16.16.0-alpine
+
+COPY --from=build /var/www/frontend /
+#RUN yarn build
+
+CMD ["yarn","start"]
+# CMD ["yarn","dev"]

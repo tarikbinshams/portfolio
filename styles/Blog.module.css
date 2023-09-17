@@ -1,0 +1,47 @@
+.textShadow {
+  height: 90px;
+  background: linear-gradient(to top, rgb(255, 255, 255), rgb(9, 9, 9));
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+.landingBg {
+  /* height: 200px; */
+  position: relative;
+  border-radius: 10px;
+  z-index: 1;
+}
+
+.landingBg::before {
+  position: absolute;
+  left: -10%;
+  top: 0%;
+  height: 100%;
+  width: 100%;
+  background-image: linear-gradient(93.51deg, #8da8c6 1.84%, #dbecff 99.18%);
+  filter: blur(270px);
+  z-index: -1;
+  content: "";
+}
+
+.landingBg2 {
+  /* height: 200px; */
+  position: relative;
+  border-radius: 10px;
+  z-index: 1;
+}
+
+.landingBg2::before {
+  position: absolute;
+  left: 25%;
+  top: 0%;
+  height: 100%;
+  width: 65%;
+  background-image: linear-gradient(93.51deg, #8da8c6 1.84%, #dbecff 99.18%);
+  filter: blur(220px);
+  z-index: -1;
+  content: "";
+}
+.daoServiceRadialGrad {
+  box-shadow: 0px 46.23366165161133px 92.46732330322266px 0px rgba(43, 121, 211, 0.2);
+}

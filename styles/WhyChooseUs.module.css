@@ -1,0 +1,19 @@
+.bgRadialGrad {
+    background: rgba(43, 121, 211, 0.70);
+    filter: blur(30px);
+    top: 25px;
+    left: 20px;
+    width: 40px;
+    height:40px;
+    transform: rotate(-0.404deg);
+    flex-shrink: 0;
+}
+
+.mobileBgRadialGrad {
+  background: rgba(43, 121, 211, 0.7);
+  filter: blur(35px);
+  width: 50px;
+  height: 40px;
+  transform: rotate(-0.404deg);
+  flex-shrink: 0;
+}
